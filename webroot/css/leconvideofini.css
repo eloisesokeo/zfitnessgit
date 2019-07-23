@@ -1,0 +1,559 @@
+/* Rating */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    margin-left: 32%;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+  
+body {
+    color: black;
+    background-color: white;
+    background-image: url(../img/videominiature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .maskBody {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    );
+  background-size:cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-default {
+    font-family: Arial;
+    font-size: 13px;
+    color: #FFF;
+    letter-spacing: 2px;
+    line-height: 48px;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    font-size: xx-large;
+    border: none;
+    width: 11%;
+    margin: 2%;
+  }
+
+  .btn-default:hover {
+    color: #FFF;
+    background: #FFF;
+  }
+
+  .btn-default:active {
+    outline-style: none;
+  }
+  
+  @media screen and (min-width: 360px) and (max-width: 500px) {
+      body {
+          background-color: #682628 !important;
+          background-image: none !important;
+          background-repeat: unset !important;
+          background-size: cover;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          margin-bottom: 140% !important;
+          background-size: 232% !important;
+          margin-top: 1% !important;
+      }
+
+      .imgLoader {
+          padding-top: -27%;
+          -webkit-mask-position-x: 47%;
+          visibility: hidden;
+      }
+
+      .buttonRetourQuitter {
+          font-family: Arial;
+          font-size: 13px;
+          color: #FFF;
+          letter-spacing: 2px;
+          line-height: 48px;
+          border-radius: 40px;
+          background: transparent;
+          transition: all 0.3s ease 0s;
+          font-weight: bold;
+          font-size: smaller;
+          border: none;
+          width: 11%;
+          margin: 2%;
+          position: relative;
+          z-index: -10;
+          width: 31%;
+      }
+
+      .maskBody {
+          background: none !important;
+      }
+
+      .sectionStyleMenuDroite {
+          visibility: hidden !important;
+      }
+
+      .navbar {
+          visibility: hidden !important;
+      }
+
+      .logoViveden {
+          visibility: hidden !important;
+      }
+
+      .buttonRetourQuitter {
+          font-size: small !important;
+          width: auto !important;
+      }
+
+      .quitterSessionp {
+        color: white;
+        font-family: Arial;
+        font-size: 34px;
+        text-align: center;
+        padding-right: -18%;
+        font-style: italic;
+        /* margin-top: -50% !important; */
+        padding-left: 29%;
+        margin-left: 23%;
+    }
+
+      .buttonConfirmerQuitter {
+          font-family: Arial;
+          font-size: 13px;
+          color: #FFF;
+          letter-spacing: 2px;
+          line-height: 48px;
+          border-radius: 40px;
+          background: transparent;
+          transition: all 0.3s ease 0s;
+          font-weight: bold;
+          font-size: xx-large;
+          border: none;
+          width: 41%;
+          margin: 2%;
+          margin-left: 48%;
+      }
+      .footer {
+        visibility: hidden;
+    }
+  }
+
+
+
+
+  @media screen and(min-width: 600px) and (max-width: 800px) {
+      body {
+          background-color: #682628 !important;
+          background-image: none !important;
+          background-repeat: unset !important;
+          background-size: cover;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          margin-bottom: 140% !important;
+          background-size: 232% !important;
+          margin-top: 1% !important;
+      }
+
+      .imgLoader {
+          padding-top: -27%;
+          -webkit-mask-position-x: 47%;
+          visibility: hidden;
+      }
+
+      .buttonRetourQuitter {
+          font-family: Arial;
+          font-size: 13px;
+          color: #FFF;
+          letter-spacing: 2px;
+          line-height: 48px;
+          border-radius: 40px;
+          background: transparent;
+          transition: all 0.3s ease 0s;
+          font-weight: bold;
+          font-size: smaller;
+          border: none;
+          width: 11%;
+          margin: 2%;
+          position: relative;
+          z-index: -10;
+          width: 31%;
+      }
+
+      .maskBody {
+          background: none !important;
+      }
+
+      .sectionStyleMenuDroite {
+          visibility: hidden !important;
+      }
+
+      .navbar {
+          visibility: hidden !important;
+      }
+
+      .logoViveden {
+          visibility: hidden !important;
+      }
+
+      .buttonRetourQuitter {
+          font-size: small !important;
+          width: auto !important;
+      }
+
+      .quitterSessionp {
+          color: white;
+          font-family: Arial;
+          font-size: 20px;
+          text-align: center;
+          padding-right: 20%;
+          font-style: italic;
+          margin-top: -50% !important;
+      }
+
+      .buttonConfirmerQuitter {
+          font-family: Arial;
+          font-size: 13px;
+          color: #FFF;
+          letter-spacing: 2px;
+          line-height: 48px;
+          border-radius: 40px;
+          background: transparent;
+          transition: all 0.3s ease 0s;
+          font-weight: bold;
+          font-size: xx-large;
+          border: none;
+          width: 41%;
+          margin: 2%;
+          margin-left: 7%;
+      }
+      .footer {
+          visibility: hidden;
+      }
+  }
+
+  @media screen  and (min-width: 700px) and (max-width: 1000px) {
+    body {
+        background-image: url(../img/videominiatureTablette.jpg) !important;
+      }
+    .maskBody {
+        background: none !important;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        margin-bottom: 38%;
+    }
+    .sectionStyleMenuDroite {
+        padding-left: 73%;
+        margin-top: -30%;
+        padding-bottom: 50.3%;
+        position: relative;
+        z-index: -10;
+        margin-top: -40%;
+    }
+
+    .imgLoader {
+        padding-top: -27%;
+        -webkit-mask-position-x: 47%;
+        width: 60%;
+        margin-left: 8%;
+    }
+
+    .sectionButton {
+        margin-top: 0%;
+    }
+
+    .buttonRetourQuitter {
+        font-family: Arial;
+        font-size: 13px;
+        color: #FFF;
+        letter-spacing: 2px;
+        line-height: 48px;
+        border-radius: 40px;
+        background: transparent;
+        transition: all 0.3s ease 0s;
+        font-weight: bold;
+        font-size: small;
+        border: none;
+        width: 11%;
+        margin: 2%;
+        position: relative;
+        z-index: -10;
+    }
+
+    .logoViveden {
+        display: block;
+        width: 20%;
+        margin-left: 26%;
+        padding-bottom: 2%;
+    }
+
+    .quitterSessionp {
+        color: white;
+        font-family: Arial;
+        font-size: 14px;
+        text-align: center;
+        padding-right: 30%;
+        font-style: italic;
+    }
+    .buttonConfirmerQuitter {
+        font-family: Arial;
+        font-size: 13px;
+        color: #FFF;
+        letter-spacing: 2px;
+        line-height: 48px;
+        border-radius: 40px;
+        background: transparent;
+        transition: all 0.3s ease 0s;
+        font-weight: bold;
+        font-size: xx-large;
+        border: none;
+        width: 20%;
+        margin: 2%;
+    }
+    .footer {
+      z-index: -10; position:relative
+    }
+}
+
+  @media screen  and (min-width: 1030px) and (max-width: 1900px) {
+      .sectionStyleMenuDroite {
+          padding-left: 73%;
+          padding-top: -6%;
+          margin-top: -30%;
+          padding: -1%;
+          padding-bottom: 23.3%;
+          position: relative;
+          z-index: -10;
+      }
+
+      .imgLoader {
+        padding-top: -27%;
+        -webkit-mask-position-x: 47%;
+        width: 59%;
+        padding-left: 14%;
+    }
+
+      .sectionButton {
+          margin-top: 0%;
+      }
+
+      .buttonRetourQuitter {
+          font-family: Arial;
+          font-size: 13px;
+          color: #FFF;
+          letter-spacing: 2px;
+          line-height: 48px;
+          border-radius: 40px;
+          background: transparent;
+          transition: all 0.3s ease 0s;
+          font-weight: bold;
+          font-size: xx-large;
+          border: none;
+          width: 11%;
+          margin: 2%;
+          position: relative;
+          z-index: -10;
+      }
+
+      .logoViveden {
+          display: block;
+          width: 20%;
+          margin-left: 26%;
+          padding-bottom: 2%;
+      }
+
+      .quitterSessionp {
+          color: white;
+          font-family: Arial;
+          font-size: 20px;
+          text-align: center;
+          padding-right: 32%;
+          font-style: italic;
+      }
+
+      .buttonConfirmerQuitter {
+          font-family: Arial;
+          font-size: 13px;
+          color: #FFF;
+          letter-spacing: 2px;
+          line-height: 48px;
+          border-radius: 40px;
+          background: transparent;
+          transition: all 0.3s ease 0s;
+          font-weight: bold;
+          font-size: xx-large;
+          border: none;
+          width: 23% !important;
+          margin-top: 7% !important;
+         margin-left: -20% !important;
+      }
+      .footer {
+        z-index: -10; position:relative
+      }
+      .maskBody {
+        background: linear-gradient(
+     rgba(0, 0, 0, 0.45), 
+     rgba(0, 0, 0, 0.45)
+     );
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        width: 115%;
+        margin-left: -7%;
+    }
+    .rate {
+        margin-left: 26%;
+    }
+  }
+
+  @media screen and (min-width: 1900px) and (max-width: 2570px) {
+      .sectionStyleMenuDroite {
+          padding-left: 73%;
+          padding-top: -6%;
+          margin-top: -16%;
+          padding: -1%;
+          padding-bottom: 23.3%;
+          position: relative;
+          z-index: -10;
+      }
+
+      .imgLoader {
+          padding-top: -27%;
+          -webkit-mask-position-x: 47%;
+          padding-left: 20%;
+      }
+
+      .sectionButton {
+          margin-top: 2%;
+      }
+
+      .buttonRetourQuitter {
+          font-family: Arial;
+          font-size: 13px;
+          color: #FFF;
+          letter-spacing: 2px;
+          line-height: 48px;
+          border-radius: 40px;
+          background: transparent;
+          transition: all 0.3s ease 0s;
+          font-weight: bold;
+          font-size: xx-large;
+          border: none;
+          width: 7%;
+          margin: 2%;
+          position: relative;
+          z-index: -10;
+      }
+
+      .logoViveden {
+          display: block;
+          width: 20%;
+          margin-left: 26%;
+          padding-bottom: 2%;
+      }
+
+      .quitterSessionp {
+          color: white;
+          font-family: Arial;
+          font-size: 20px;
+          text-align: center;
+          padding-right: 28%;
+          font-style: italic;
+      }
+
+      .buttonConfirmerQuitter {
+          font-family: Arial;
+          font-size: 13px;
+          color: #FFF;
+          letter-spacing: 2px;
+          line-height: 48px;
+          border-radius: 40px;
+          background: transparent;
+          transition: all 0.3s ease 0s;
+          font-weight: bold;
+          font-size: xx-large;
+          border: none;
+          width: 11%;
+          margin: 2%;
+      }
+      .footer {
+        z-index: -10; position:relative
+      }
+      .maskBody {
+        background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
+        background-size: cover;
+        margin-left: -65%;
+        margin-right: -65%;
+    }
+  }
+
+
+  @media screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 960px) and (max-height: 1080px) {
+    .maskBody {
+        background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
+        background-size: cover;
+        margin-left: -65%;
+        margin-right: -65%;
+        margin-bottom: 0%;
+        padding-bottom: 43%;
+        padding-top: 27%;
+    }
+    .sectionButton {
+        margin-top: -8%;
+    }
+}

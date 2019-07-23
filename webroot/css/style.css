@@ -1,0 +1,126 @@
+body{
+  background: #222323;
+  margin: 2%;
+}
+
+.Logo_1{
+  width: 45%;
+}
+
+.titre{
+  width: 100%;
+  display: inline-block;
+  margin-top: 37px;
+}
+
+.Titre-cardio-training{
+  color: #9177bb;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  margin-left: -40px;
+
+}
+.Titre-Walking{
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: -124px;
+}
+
+.liens{
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  float: right;
+  margin-top: 37px;
+}
+.liens_en{
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  float: right;
+  margin-top: 37px;
+  padding-left: 9px;
+
+}
+a:hover{
+  color: #9177bb;
+  text-decoration: none;
+}
+a:focus{
+  color: #9177bb;
+}
+.italic-sous-titres{
+  color: #fff;
+  font-size: 24px;
+  padding-left: 15px;
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+.bouton_rond{
+  width: 4%;
+  border: solid #9177bb;
+  border-radius: 50px;
+}
+.niveau{
+  color: #fff;
+  margin-left: 25%;
+  font-weight: bold;
+  margin-top: 6%;
+}
+.espacement{
+  padding-top: 5%;
+}
+.niveau2{
+  color: #fff;
+  margin-left: 25%;
+  font-weight: bold;
+  margin-top: 6%;
+
+}
+.initiation{
+  height: 24px;
+  margin-left: 27px;
+  margin-top: 70px;
+}
+.intermediaire{
+  height: 24px;
+  margin-left: 27px;
+  margin-top: 8%;
+}
+.avancé{
+  height: 24px;
+  margin-left: 27px;
+  margin-top: 8%;
+}
+
+.alignement{
+  align-items: center;
+}
+.pl-2, .px-2 {
+    padding-left: 0.9rem !important;
+}
+.légende{
+  color: #fff;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 4%;
+  font-family: 'Open Sans', sans-serif;
+}
+.légende2{
+  color: #9177bb;
+  font-weight: 700;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 2%;
+  font-family: 'Open Sans', sans-serif;
+}
+.indexe{
+  z-index: 1;
+  margin-top: -23%;
+  position: absolute;
+}
