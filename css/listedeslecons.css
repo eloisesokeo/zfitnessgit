@@ -1,0 +1,156 @@
+/* Carousel */
+
+.item {
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+@media screen and (max-width: 300px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+
+  .liens_en {
+    font-size: 16px !important;
+  }
+
+  .liens {
+      font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+  .liens_en {
+    font-size: 16px !important;
+  }
+
+  .liens {
+      font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+  .liens_en {
+    font-size: 16px !important;
+  }
+
+  .liens {
+      font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+  .liens_en {
+    font-size: 16px !important;
+  }
+
+  .liens {
+      font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+.item img {
+    height: 288px;
+}
+
+body {
+    width: 130% !important;
+}
+.liens_en {
+  font-size: 16px !important;
+}
+
+.liens {
+    font-size: 16px !important;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+
+  .owl-carousel.owl-loaded {
+      display: block;
+      padding-top: 9.8%;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .item img {
+      height: 288px;
+  }
+
+  .owl-carousel.owl-loaded {
+      display: block;
+      padding-top: 9.8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 2560px;
+  }
+
+  .owl-carousel.owl-loaded {
+      display: block;
+      padding-top: 9.8%;
+      margin-top: -7.9%;
+  }
+}
+
+body {
+  background-color: #343A40;
+}
+.italic-sous-titres {
+  color: #fff;
+  font-size: 24px;
+  padding-left: 15%;
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: -19%;
+}
+.initiation {
+  height: 24px;
+  margin-left: 27px;
+  margin-top: 34px;
+}
+
+.imgHalteres {
+  height: 35px;
+  width: auto;
+  margin-top: 7%;
+  padding-left: 3% !important;
+  position: initial;
+}

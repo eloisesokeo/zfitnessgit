@@ -1,0 +1,155 @@
+/* Carousel */
+
+.item {
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+@media screen and (max-width: 300px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+
+  .liens_en {
+    font-size: 16px !important;
+  }
+
+  .liens {
+      font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+  .liens_en {
+    font-size: 16px !important;
+  }
+
+  .liens {
+      font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+  .liens_en {
+    font-size: 16px !important;
+  }
+
+  .liens {
+      font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+  .liens_en {
+    font-size: 16px !important;
+  }
+
+  .liens {
+      font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+.item img {
+    height: 288px;
+}
+
+body {
+    width: 130% !important;
+}
+.liens_en {
+  font-size: 16px !important;
+}
+
+.liens {
+    font-size: 16px !important;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .item img {
+      height: 288px;
+  }
+
+  body {
+      width: 130% !important;
+  }
+
+  .owl-carousel.owl-loaded {
+      display: block;
+      padding-top: 9.8%;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .item img {
+      height: 288px;
+  }
+
+  .owl-carousel.owl-loaded {
+      display: block;
+      padding-top: 9.8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 2560px;
+  }
+
+  .owl-carousel.owl-loaded {
+      display: block;
+      padding-top: 9.8%;
+      margin-top: -7.9%;
+  }
+}
+
+
+@media screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 960px) and (max-height: 1080px) {
+    .owl-carousel.owl-loaded {
+        display: block;
+        padding-top: 24.4%;
+      }
+    .imgHappyBoddy {
+      margin-top: 7%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) and (max-height: 1366px) {
+  .owl-carousel.owl-loaded {
+    display: block;
+    padding-top: 28.8%;
+  }
+}
+
+
+
+body {
+  background-color: #343A40;
+}
